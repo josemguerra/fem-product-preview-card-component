@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta for SEO -->
+    <meta
+      name="description"
+      content="Gabrielle Essence Eau De Parfum by CHANEL – a floral, solar and voluptuous fragrance by Olivier Polge."
+    />
+    <meta
+      name="keywords"
+      content="Chanel, Perfume, Gabrielle Essence, Eau De Parfum, Luxury Fragrance, Floral Perfume"
+    />
+    <meta name="author" content="jguerra" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="product" />
+    <meta
+      property="og:title"
+      content="Gabrielle Essence Eau De Parfum by CHANEL"
+    />
+    <meta
+      property="og:description"
+      content="A floral, solar, and voluptuous fragrance composed by Olivier Polge, Perfumer-Creator for CHANEL."
+    />
+    <meta
+      property="og:image"
+      content="./assets/images/image-product-desktop.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://github.com/jguerra/fem-product-preview-card-component.git"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Gabrielle Essence Eau De Parfum | CHANEL</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <article class="product" itemscope itemtype="https://schema.org/Product">
+        <h1 class="sr-only">Gabrielle Essence Eau De Parfum</h1>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/image-product-desktop.jpg"
+          />
+          <img
+            class="mobile__image"
+            src="./assets/images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+            width="686"
+            height="480"
+            loading="lazy"
+            decoding="async"
+            itemprop="image"
+          />
+        </picture>
+        <section class="product__details">
+          <p class="product__details-type">Perfume</p>
+          <h2 class="product__details-name" itemprop="name">
+            Gabrielle Essence Eau De Parfum
+          </h2>
+          <p class="product__details-description" itemprop="description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <aside class="product__cta">
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+              <meta property="priceCurrency" content="USD" />
+              <span class="product__price"
+                ><ins
+                  class="product__price--low"
+                  itemprop="price"
+                  content="149.99"
+                  >$149.99</ins
+                >
+                <del class="product__price--high" content="169.99"
+                  >$169.99</del
+                ></span
+              >
+            </p>
+            <button
+              type="button"
+              class="add-to-cart-button"
+              aria-label="Add Gabrielle Essence Eau De Parfum to cart"
+            >
+              <span class="add-to-cart-button__icon"></span>
+              <span class="add-to-cart-button__text">Add to Cart</span>
+            </button>
+          </aside>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">jguerra</a>.
+      </div>
+    </footer>
+  </body>
+</html>
